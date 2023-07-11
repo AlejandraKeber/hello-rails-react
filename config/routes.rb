@@ -8,4 +8,6 @@ Rails.application.routes.draw do
   namespace :api do
     get 'random_greeting', to: 'greetings#random_greeting'
   end
+
+  get '*path', to: 'root#index'
 end
